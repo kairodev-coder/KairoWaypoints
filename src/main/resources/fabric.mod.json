@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "kairowaypoints",
+  "version": "${version}",
+  "name": "KairoWaypoints",
+  "description": "Client-side waypoint and directional navigation tools with deathpoints, groups, routes, sharing, and per-world storage.",
+  "authors": ["kairodev-coder"],
+  "contact": {
+    "homepage": "https://github.com/kairodev-coder/KairoWaypoints",
+    "sources": "https://github.com/kairodev-coder/KairoWaypoints",
+    "issues": "https://github.com/kairodev-coder/KairoWaypoints/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/kairowaypoints/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.kairo.kairowaypoints.KairoWaypointsClient"],
+    "modmenu": ["dev.kairo.kairowaypoints.integration.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": "${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "${fabric_version}"
+  },
+  "suggests": {
+    "modmenu": "${modmenu_version}",
+    "cloth-config": "${cloth_config_version}"
+  }
+}
